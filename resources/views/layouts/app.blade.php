@@ -27,7 +27,7 @@
 
     {{-- Mobile top bar --}}
     <header class="sticky top-0 z-30 flex items-center justify-between bg-forest px-4 py-3 text-white lg:hidden">
-        <a href="{{ route('dashboard') }}" class="flex items-center gap-2 font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-forest"><x-ui.logo class="h-7 w-7" /> {{ config('app.name') }}</a>
+        <a href="{{ route('dashboard') }}" class="flex items-center gap-2 font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-forest"><img src="{{ asset('images/logo-white.svg') }}" alt="SupportTracker" class="h-7 w-auto"> {{ config('app.name') }}</a>
         <button @click="nav = !nav" class="rounded-lg p-2 hover:bg-forest-700 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-forest" aria-label="Toggle menu">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
@@ -38,7 +38,7 @@
     <aside class="fixed inset-y-0 left-0 z-50 flex w-64 -translate-x-full flex-col bg-forest p-5 text-white transition-transform lg:translate-x-0"
            :class="{ '!translate-x-0': nav }">
         <a href="{{ route('dashboard') }}" class="mb-8 flex items-center gap-3 px-2 text-lg font-extrabold tracking-tight rounded-xl focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 focus:ring-offset-forest">
-            <x-ui.logo class="h-9 w-9" /> {{ config('app.name') }}
+            <img src="{{ asset('images/logo-white.svg') }}" alt="SupportTracker" class="h-8 w-auto"> {{ config('app.name') }}
         </a>
 
         <nav class="flex-1 space-y-1 overflow-y-auto">
