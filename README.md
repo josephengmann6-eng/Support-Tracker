@@ -1,5 +1,7 @@
 # SupportTracker
 
+> Build history: see [CHANGELOG.md](CHANGELOG.md) for a full record of all 8 build phases and subsequent fixes.
+
 An activity tracking system with shift handover for application support teams. Each day the team works through a fixed list of checks (SMS counts, failed transaction queue, overnight batches, disk usage, backups). SupportTracker records who did what and when, keeps anything unfinished visible, and produces a copy-paste handover summary for the next shift.
 
 Stack: **Laravel 12** (see note below), Laravel Breeze (Blade + Tailwind CSS 3), SQLite, Chart.js, Alpine.js, Pest. Timezone is `Africa/Accra`.
